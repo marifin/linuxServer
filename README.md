@@ -91,9 +91,10 @@ root ALL=(ALL:ALL) ALL grader ALL=(ALL:ALL) ALL
 
 # Step 9: Create an SSH key pair for grader using the ssh-keygen tool
 - On the local machine: Run ssh-keygen
-- Enter file in which to save the key (I gave the name grader_key) in the local directory ~/.ssh
-- Enter in a passphrase twice. Two files will be generated ( ~/.ssh/grader_key and ~/.ssh/grader_key.pub)
-- Run cat ~/.ssh/grader_key.pub and copy the contents of the file Log in to the grader's virtual machine
+- Enter file in which to save the key in the local directory ~/.ssh
+- Enter in a passphrase twice. ~/.ssh/grader_key and ~/.ssh/grader_key.pub are created.
+- Run cat ~/.ssh/grader_key.pub and copy the contents of the file 
+- Log in to the grader's virtual machine
 - On the grader's virtual machine: Create a new directory called ~/.ssh (mkdir .ssh)
   Run sudo nano ~/.ssh/authorized_keys and paste the content into this file, save and exit
 - Give permissions: chmod 700 .ssh and chmod 644 .ssh/authorized_keys
