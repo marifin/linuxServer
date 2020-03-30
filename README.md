@@ -1,6 +1,3 @@
-# linuxServer
-Linux server hosting a web application
-
 # About
 This project sets up and secures a Linux instance on a virtual machine. Then it installs and configures a web and database server to host a web application.
 
